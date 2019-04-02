@@ -1,28 +1,38 @@
 html{
 	height: 100%;
 	width: 100%;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 }
 body{
+	height: 100%;
+	width: 100%;
 	min-height: 100%;
 	min-width: 100%;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 }
 #column_flex{
-	/*display: flex;
+	height: 100%;
+	width: 100%;
+	min-height: 100%;
+	min-width: 100%;
+	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	padding: 0px 0px 0px 0px;
-	margin: 0px 0px 0px 0px;*/
+	margin: 0px 0px 0px 0px;
 }
 #nav_bar{
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: flex-start;
 	align-items: center;
-	flex-wrap: wrap;
+	/*flex-wrap: wrap;*/
 	height: 35px;
 	padding: 0px 0px 0px 0px;
-	margin: 0px 0px 0px 0px;
+	margin: 10px 0px 0px 0px;
 }
 .separator{
 	height: 100%;
@@ -122,9 +132,11 @@ a{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 800px;
+	height: 100%;
 	width: 100%;
-	flex: 1;
+	flex-grow: 1;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 }
 #img_container{
 	display: flex;
