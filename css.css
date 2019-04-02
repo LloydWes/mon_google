@@ -31,13 +31,9 @@ body{
 	align-items: center;
 	/*flex-wrap: wrap;*/
 	height: 35px;
-	padding: 0px 0px 0px 0px;
-	margin: 10px 0px 0px 0px;
-}
-.separator{
-	height: 100%;
-	width: 8px;
-
+	min-height: 35px;
+	padding: 10px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 }
 a:visited{
 	color: black;
@@ -53,7 +49,7 @@ a:hover{
 	/*border: 1px solid;*/
 	width: 43px;
 	height: 24px;
-
+	margin: 0px 14px 0px 0px;
 }
 a{
 	display: flex;
@@ -92,20 +88,6 @@ a{
 #gmail{
 	color: rgb(80,80,80);
 }
-#container_img{
-	position: relative;
-	/*border: 2px solid blue;*/
-}
-#div_overlay_logo_carre{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	z-index: 10;
-	background-color: rgba(200,200,200, 0);
-	/*border: 2px solid red;*/
-}
 #logo_carre{
 	width: 18px;
 	height: 18px;
@@ -125,7 +107,6 @@ a{
         -ms-filter: opacity(100%);
 
 }
-
 /*---------------------------------------------------------------------------------*/
 #section{
 	display: flex;
@@ -135,22 +116,21 @@ a{
 	height: 100%;
 	width: 100%;
 	flex-grow: 1;
-	padding: 0px 0px 0px 0px;
+	padding: 0px 0px 100px 0px;
 	margin: 0px 0px 0px 0px;
+	/*border: 1px black solid;*/
 }
 #img_container{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
-.vertical_separator{
-	height: 30px;
-}
 form{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin: 30px 0px 230px 0px;
 }
 #radius_div{
 	display: flex;
@@ -173,7 +153,6 @@ form{
 					-1px -1px 4px 0px #EFEFEF, 
 					1px 1px 4px 0px #EFEFEF;
 }
-
 #search_field{
 	width: 454px;
 	height: 34px;
@@ -187,9 +166,10 @@ form{
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	margin: 30px 0px 0px 0px;
 }
-.small_separator{
-	width: 10px;
+input[type="submit"]{
+	margin: 0px 10px 0px 0px;
 }
 .button{
 	border-top-left-radius: 4px;
@@ -208,9 +188,6 @@ form{
 					-0px -0px 0px 0px #EFEFEF, 
 					0px 0px 0px 0px #EFEFEF;
 }
-
-
-
 /*---------------------------------------------------------------------------------*/
 #footer{
 	display: flex;
@@ -218,13 +195,14 @@ form{
 	justify-content: space-around;
 	background-color: #F2F2F2;
 	height: 82px;
+	min-height: 82px;
 	font-family: arial;
 	font-size: 13px;
 	color: rgb(130,130,130);
 	padding: 0px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;
 }
-#footer_haut{
+#top_footer{
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -237,7 +215,10 @@ form{
 	padding: 0px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;
 }
-#footer_bas{
+#top_footer:first-child{
+	margin: 0px 0px 0px 27px;
+}
+#bottom_footer{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -256,6 +237,13 @@ form{
 	justify-content: space-between;
 	padding: 0px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;
+}
+#footer_left a{
+	color: rgb(130,130,130);
+	margin: 0px 0px 0px 27px;
+}#footer_right a{
+	color: rgb(130,130,130);
+	margin: 0px 27px 0px 0px;
 }
 #footer_right{
 	display: flex;
